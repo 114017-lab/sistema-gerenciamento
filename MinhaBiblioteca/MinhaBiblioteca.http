@@ -1,6 +1,28 @@
 @MinhaBiblioteca_HostAddress = http://localhost:5117
 
-GET {{MinhaBiblioteca_HostAddress}}/weatherforecast/
+GET {{MinhaBiblioteca_HostAddress}}/api/Material
 Accept: application/json
+
+###
+
+POST {{MinhaBiblioteca_HostAddress}}/api/Material/livro
+Content-Type: application/json
+
+{ "titulo": "Dom Casmurro", "autor": "Machado de Assis", "paginas": 256, "anoPublicacao": 1899 }
+
+###
+
+POST {{MinhaBiblioteca_HostAddress}}/api/Material/revista
+Content-Type: application/json
+
+{ "titulo": "Superinteressante", "edicao": 400, "mes": 11, "anoPublicacao": 2026 }
+
+###
+
+POST {{MinhaBiblioteca_HostAddress}}/api/Material/1/Emprestar?Disponivel=true
+
+###
+
+DELETE {{MinhaBiblioteca_HostAddress}}/api/Material/2
 
 ###

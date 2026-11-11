@@ -1,7 +1,7 @@
 public abstract class MaterialBiblioteca
 {
     //Atributos
-    public int Id { get; init; }
+    public int Id { get; set; }
     public string? Titulo { get; set; }
     public int AnoPublicacao { get; set; }
 

@@ -30,28 +30,20 @@ public class MaterialController : ControllerBase
     }
 
     [HttpPost("livro")]
-    public IActionResult Post()
+    public IActionResult PostLivro([FromBody] Livro livro)
     {
-        var novoLivro = _repository.Adicionar().Select(material =>
-        {
-            return new
-            {
-            };
-        });
+        var novoLivro = _repository.Adicionar(livro);
+        return Ok(novoLivro);
     }
 
-    [HttpPost("Revista")]
-    public IActionResult Post()
+    [HttpPost("revista")]
+    public IActionResult PostRevista([FromBody] Revista revista)
     {
-        var novoLivro = _repository.Adicionar().Select(material =>
-        {
-            return new
-            {
-            };
-        });
+        var novaRevista = _repository.Adicionar(revista);
+        return Ok(novaRevista);
     }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
 
     public IActionResult Delete(int id)
     {
@@ -65,11 +57,8 @@ public class MaterialController : ControllerBase
         return Ok("Material excluido com sucesso!");
     }
 
-    [HttpGet("{id}/")]
-
     [HttpPost("{id}/Emprestar")]
-
-    public IActionResult Emprestar(int id, [FromQuery] double Disponivel)
+    public IActionResult Emprestar(int id, [FromQuery] bool Disponivel)
     {
         var material = _repository.ObterPorId(id);
 
@@ -79,7 +68,11 @@ public class MaterialController : ControllerBase
         }
         if (material is not IEmprestimo itemRecuperavel)
         {
-            return BadRequest($"O livro '{material.Titulo}' do tipo '{material.GetType().Name}' nao está Disponivel");
+            return BadRequest($"O material '{material.Titulo}' do tipo '{material.GetType().Name}' nao pode ser emprestado");
+        }
+        if (!itemRecuperavel.Emprestar(Disponivel))
+        {
+            return BadRequest($"O livro '{material.Titulo}' nao esta disponivel");
         }
 
         return Ok(new

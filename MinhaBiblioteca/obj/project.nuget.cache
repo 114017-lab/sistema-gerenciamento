@@ -1,15 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "ATGFsuhS7OY=",
+  "dgSpecHash": "L0oV3T3bQHo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Unigran\\Desktop\\sistema-gerenciamento\\MinhaBiblioteca\\MinhaBiblioteca.csproj",
+  "projectFilePath": "E:\\ProjetoApi\\sistema-gerenciamento\\MinhaBiblioteca\\MinhaBiblioteca.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Unigran\\.nuget\\packages\\microsoft.extensions.apidescription.server\\10.0.0\\microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
-    "C:\\Users\\Unigran\\.nuget\\packages\\microsoft.openapi\\3.11.0\\microsoft.openapi.3.11.0.nupkg.sha512",
-    "C:\\Users\\Unigran\\.nuget\\packages\\swashbuckle.aspnetcore\\11.0.0\\swashbuckle.aspnetcore.11.0.0.nupkg.sha512",
-    "C:\\Users\\Unigran\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\11.0.0\\swashbuckle.aspnetcore.swagger.11.0.0.nupkg.sha512",
-    "C:\\Users\\Unigran\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\11.0.0\\swashbuckle.aspnetcore.swaggergen.11.0.0.nupkg.sha512",
-    "C:\\Users\\Unigran\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\11.0.0\\swashbuckle.aspnetcore.swaggerui.11.0.0.nupkg.sha512"
+    "C:\\Users\\guilh\\.nuget\\packages\\microsoft.extensions.apidescription.server\\9.0.0\\microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\swashbuckle.aspnetcore\\10.3.0\\swashbuckle.aspnetcore.10.3.0.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.3.0\\swashbuckle.aspnetcore.swagger.10.3.0.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.3.0\\swashbuckle.aspnetcore.swaggergen.10.3.0.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.3.0\\swashbuckle.aspnetcore.swaggerui.10.3.0.nupkg.sha512",
+    "C:\\Users\\guilh\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512"
   ],
   "logs": []
 }
